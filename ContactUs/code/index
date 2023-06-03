@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signguage</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    </head>
+    <body>
+
+
+        <div class="signguage">
+
+
+            <form>
+                <div class="heading">
+                <h1> <i class="fa fa-phone-volume"></i> Contact Us!</h1>
+                <space> &nbsp;</space>
+            </div>
+
+                <div class="input-group">
+                <input type="text" id="name" required>
+                <label for="name"><i class=" fa fa-user"></i>  Name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="email" required>
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>               
+            </div>
+
+            <div class="input-group">
+                <textarea id="message" rows="8" required></textarea>
+                <label for="message"><i class="fa fa-message"></i> Message</label>               
+            </div>
+
+            <div>
+            <rounded-button type ="submit"><i class="fa fa-paper-plane"></i></rounded-button>
+            </div>
+        </form>
+    </body>
+</html>
+
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    background: transparent;
+}
+.signguage{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,7 ), #5576d1) ,url(mint-color.jpeg);
+    background-position: center;
+    background-size: cover;
+    color: #e9eeec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    width: 90%;
+    max-width: 600px;
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+.heading{
+    text-align: center;
+    
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color:#e9ebee;
+    background: transparent;
+    font-size: 15px;
+}
+label{
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+}
+rounded-button{
+    padding: 15px 15px;
+    border-radius: 25px;
+    justify-content: center;
+    display: center;
+    line-height: 50px;
+    align-items: center;
+    color:#f8f4f4;
+    outline: none;
+    background: #1c8067;
+    border: 1px solid #fff;
+    width: 8%;
+    cursor: pointer;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+
